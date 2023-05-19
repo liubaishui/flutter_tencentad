@@ -44,7 +44,7 @@ object RewardVideoAd {
     }
 
     private fun loadRewardVideoAd() {
-        rewardVideoAD = RewardVideoAD(context, codeId, rewardVideoADListener) // 有声播放
+        rewardVideoAD = RewardVideoAD(context, codeId, rewardVideoADListener, false) // 无声播放
         var options = ServerSideVerificationOptions.Builder()
             .setUserId(userID)
             .setCustomData(customData)
